@@ -8,11 +8,25 @@
 </head>
 <body>
   <div class="container">
-    <h1>Lista de Tareas</h1>
-    <input type="text" id="taskInput" placeholder="Añadir tarea">
-    <button id="addTaskBtn">Añadir</button>
-    <ul id="taskList"></ul>
+    <div class="left-container">
+      <h2>Tareas Completadas</h2>
+      <ul id="completed-tasks">
+        <!-- Aquí se mostrarán las tareas completadas -->
+      </ul>
+    </div>
+    <div class="center-container">
+      <h1>Lista de Tareas</h1>
+      <input type="text" id="taskInput" placeholder="Añadir tarea">
+      <button id="addTaskBtn">Añadir</button>
+    </div>
+    <div class="right-container">
+      <h2>Tareas Pendientes</h2>
+      <ul id="pending-tasks">
+        <!-- Aquí se mostrarán las tareas pendientes -->
+      </ul>
+    </div>
   </div>
+
   <script type="module" src="js/index.js"></script>
 </body>
 </html>

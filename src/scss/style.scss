@@ -2,13 +2,30 @@
 
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos con el mismo espacio entre ellos */
+  max-width: 800px; /* Amplía el ancho máximo para acomodar los tres contenedores */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-container, .center-container, .right-container {
+  flex: 1; /* Que los tres contenedores ocupen el mismo espacio */
+  margin: 0 10px; /* Espacio entre los contenedores */
+}
+
+.left-container, .right-container {
+  background-color: #f0f0f0; /* Cambio de color para distinguir los contenedores */
+  padding: 10px;
+}
+
+.center-container {
+  padding: 10px;
+}
+
   
   h1 {
     text-align: center;
