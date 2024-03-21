@@ -30,6 +30,13 @@ body{
 }
 
 
+h2{
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #363535;
+}
+
 .left-container, .center-container, .right-container {
   flex: 1; 
   margin: 10px 10px;
@@ -50,6 +57,10 @@ box-shadow: inset 20px 20px 31px #cccccc,
   
   h1 {
     text-align: center;
+    font-family: "Days One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #363535;
   }
   
   input[type="text"] {
