@@ -1,25 +1,46 @@
 @use "bootstrap";
 
+body{
+  background-color: #e0e0e0;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajustar la altura al 100% de la ventana */
+}
 
 .container {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos con el mismo espacio entre ellos */
-  max-width: 800px; /* Amplía el ancho máximo para acomodar los tres contenedores */
+  justify-content: space-between;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 30px #bebebe,
+             -20px -20px 30px #ffffff;
 }
 
+.task-time {
+  font-size: 12px; 
+  color: #999;
+  margin-left: 5px;
+}
+
+
 .left-container, .center-container, .right-container {
-  flex: 1; /* Que los tres contenedores ocupen el mismo espacio */
-  margin: 0 10px; /* Espacio entre los contenedores */
+  flex: 1; 
+  margin: 10px 10px;
 }
 
 .left-container, .right-container {
-  background-color: #f0f0f0; /* Cambio de color para distinguir los contenedores */
   padding: 10px;
+  border-radius: 10px;
+background: #f0f0f0;
+box-shadow: inset 20px 20px 31px #cccccc,
+            inset -20px -20px 31px #ffffff;
 }
 
 .center-container {
